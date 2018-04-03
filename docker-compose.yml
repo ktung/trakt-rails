@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  postgres.db:
+    image: postgres
+    ports:
+     - 5432:5432
+#    volumes:
+#      - postgres.db
+    environment:
+      POSTGRES_PASSWORD: postgres
+
+#volumes:
+#  postgres.db:
+# https://docs.docker.com/compose/rails/#define-the-project
+
